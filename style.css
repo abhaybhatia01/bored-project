@@ -507,7 +507,7 @@ padding-bottom: 0.5rem;
   background-color: white;
   padding-top:2rem;
   padding-bottom:2rem;
-  height: 70vh;
+  min-height: 70vh;
   display: grid;
 }
 
