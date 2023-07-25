@@ -381,17 +381,11 @@ toggleBox.addEventListener("transitionend", function () {
 
 toggler.addEventListener("click", function () {
   if (isHidden()) {
-    let code = prompt("You need Code to enter");
-    if (code == 'moles') {
       toggleBox.style.removeProperty("display");
       toggler.textContent='Show less..'
       setTimeout(() => toggleBox.classList.remove("box-hidden"), 300);
-    }else{
-
-    }
   } else {
     toggler.textContent='Show more..'
-
     toggleBox.classList.add("box-hidden");
   }
 });

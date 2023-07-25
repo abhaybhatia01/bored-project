@@ -382,6 +382,14 @@ padding-bottom: 0.5rem;
         cursor: pointer;
         transition: transform 1s ease;
 }
+@media (width>600px) {
+  .refresh-button:hover,
+  .universal-owl-refresh:hover {
+    transform: rotate(-0.5turn);
+    transition: transform 0.5s ease;
+  }
+  
+}
 .animal-fact-refresh.cat{
   right:60px;
   bottom: 10px;
@@ -498,6 +506,7 @@ padding-bottom: 0.5rem;
 .download {
   background-color: white;
   padding-top:2rem;
+  padding-bottom:2rem;
   height: 70vh;
   display: grid;
 }
@@ -508,6 +517,10 @@ padding-bottom: 0.5rem;
   width: min(980px, 85%);
   margin:0 auto;
   padding-top: min(20vh, 5em);
+}
+.download-button-container{
+  padding-bottom: min(20vh, 5em)
+  
 }
 .download-text{
   font-family: 'Lora', serif;
@@ -703,8 +716,8 @@ text-align: justify;
   text-transform: uppercase;
   display: block;
   margin-inline:auto;
-  margin-top:1.5rem;
-  margin-bottom: 0.5rem;
+  /* margin-top:1.5rem;
+  margin-bottom: 0.5rem; */
   padding: 0.4rem 0.8rem;
   background-color: #ffffff;
 }
@@ -712,19 +725,10 @@ text-align: justify;
   background-color: rgb(201, 201, 201);
 }
 .secret{
-  background-color: white;
-  padding-inline:2rem;
-  padding-block: 4rem;
-  text-align: left;
+  text-align: justify;
   opacity: 1;
   transition: opacity 1s;
-}
-@media (width>600px) {
-  .secret{
-    text-align: left;
-    padding-inline:3rem;
-    padding-block: 4rem;
-  }
+  padding:1rem;
 }
 
 .box-hidden {
@@ -741,6 +745,8 @@ text-align: justify;
     margin: 0 auto;
     padding-block: min(10vh, 2em);
     font-size: 14px;
+    text-align: center;
+
 }
 footer{
   height:10vh;
